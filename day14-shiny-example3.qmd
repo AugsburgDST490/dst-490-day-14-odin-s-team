@@ -21,7 +21,7 @@ library(sf)     # R wrapper around GDAL/OGR
 library(leaflet)    # for fortifying shapefiles
 library(shiny)
 
-zips <- st_read(dsn = "Zip_Codes/", layer = "Zip_Codes")
+zips <- st_read(dsn = "Zip_Codes/", layer = "Zip_Codes", quiet = TRUE)
 
 
 # Create your own listing of zip codes
